@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         //setting action bar icon and text properties
         Toolbar toolbar = findViewById(R.id.mCustomToolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("  Hello There");
+        getSupportActionBar().setTitle("  Mental Health");
         getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
         toolbar.setTitleTextColor(getResources().getColor(R.color.iconTintColorFrontPageButton));
 
