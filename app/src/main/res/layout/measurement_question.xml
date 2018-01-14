@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     android:background="@android:color/background_dark"
     android:descendantFocusability="beforeDescendants"
-    android:focusableInTouchMode="true"
-    tools:context="com.sabbir.preneurlab.mentalhealth.MainActivity">
+    android:focusableInTouchMode="true">
 
     <include
         android:id="@+id/mCustomToolbar"
         layout="@layout/toolbar"
         app:layout_constraintBottom_toTopOf="@id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!--layout height must be 0 to work like percentage-->
@@ -21,6 +23,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/linearbutton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mCustomToolbar">
 
         <LinearLayout
@@ -58,8 +63,8 @@
                     android:maxLines="3"
                     android:textColor="@android:color/darker_gray"
                     android:textColorHint="@color/textHintColor"
-                    android:textSize="@dimen/font_size_home_page"
-                    android:textCursorDrawable="@drawable/color_cursor" />
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/font_size_home_page" />
             </LinearLayout>
 
             <LinearLayout
@@ -145,6 +150,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
+                            android:onClick="onClick"
                             android:text="1"
                             android:textColor="@android:color/darker_gray" />
 
@@ -155,14 +161,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_toRightOf="@+id/radioGroup"
+                        android:layout_below="@+id/radioGroup"
+                        android:layout_marginLeft="3dp"
                         android:hint="Write here"
                         android:inputType="textMultiLine"
                         android:maxLines="3"
                         android:textColor="@android:color/darker_gray"
                         android:textColorHint="@color/textHintColor"
-                        android:textSize="@dimen/font_size_home_page"
-                        android:textCursorDrawable="@drawable/color_cursor" />
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
                 </RelativeLayout>
             </LinearLayout>
 
@@ -217,6 +224,7 @@
                         android:layout_height="wrap_content"
                         android:buttonTint="@android:color/darker_gray"
                         android:checked="false"
+                        android:onClick="onClick"
                         android:text="Others"
                         android:textColor="@android:color/darker_gray" />
 
@@ -230,8 +238,8 @@
                         android:inputType="textMultiLine"
                         android:textColor="@android:color/darker_gray"
                         android:textColorHint="@color/textHintColor"
-                        android:textSize="@dimen/font_size_home_page"
-                        android:textCursorDrawable="@drawable/color_cursor"/>
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -309,6 +317,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
+                            android:onClick="onClick"
                             android:text="Others"
                             android:textColor="@android:color/darker_gray" />
                     </RadioGroup>
@@ -318,14 +327,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_toRightOf="@+id/radioGroup3"
+                        android:layout_below="@+id/radioGroup3"
+                        android:layout_marginLeft="3dp"
                         android:hint="Write here"
                         android:inputType="textMultiLine"
                         android:maxLines="3"
                         android:textColor="@android:color/darker_gray"
                         android:textColorHint="@color/textHintColor"
-                        android:textSize="@dimen/font_size_home_page"
-                        android:textCursorDrawable="@drawable/color_cursor" />
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
                 </RelativeLayout>
             </LinearLayout>
 
@@ -413,6 +423,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
+                            android:onClick="onClick"
                             android:text="Others"
                             android:textColor="@android:color/darker_gray" />
 
@@ -423,14 +434,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_toRightOf="@+id/radioGroup4"
+                        android:layout_below="@+id/radioGroup4"
+                        android:layout_marginLeft="3dp"
                         android:hint="Write here"
                         android:inputType="textMultiLine"
                         android:maxLines="3"
                         android:textColor="@android:color/darker_gray"
                         android:textColorHint="@color/textHintColor"
-                        android:textSize="@dimen/font_size_home_page"
-                        android:textCursorDrawable="@drawable/color_cursor" />
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
                 </RelativeLayout>
             </LinearLayout>
 
@@ -463,8 +475,8 @@
                     android:maxLines="3"
                     android:textColor="@android:color/darker_gray"
                     android:textColorHint="@color/textHintColor"
-                    android:textSize="@dimen/font_size_home_page"
-                    android:textCursorDrawable="@drawable/color_cursor" />
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/font_size_home_page" />
             </LinearLayout>
 
         </LinearLayout>
@@ -485,11 +497,11 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paddingLeftandRight"
+            android:layout_marginTop="@dimen/paddingLeftandRight"
             android:background="@drawable/rectangle_round_corner_filled_inverse"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:layout_marginTop="@dimen/paddingLeftandRight"
-            android:layout_marginBottom="@dimen/paddingLeftandRight"
             android:text="Submit"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textColor="@android:color/darker_gray" />

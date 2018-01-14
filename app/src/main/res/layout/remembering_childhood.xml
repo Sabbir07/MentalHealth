@@ -12,6 +12,9 @@
         android:id="@+id/mCustomToolbar"
         layout="@layout/toolbar"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!--layout height must be 0 to work like percentage-->
@@ -61,8 +64,8 @@
                     android:maxLines="3"
                     android:textColor="@android:color/darker_gray"
                     android:textColorHint="@color/textHintColor"
-                    android:textSize="@dimen/font_size_home_page"
-                    android:textCursorDrawable="@drawable/color_cursor"/>
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/font_size_home_page" />
             </LinearLayout>
 
             <LinearLayout
@@ -94,8 +97,8 @@
                     android:maxLines="3"
                     android:textColor="@android:color/darker_gray"
                     android:textColorHint="@color/textHintColor"
-                    android:textSize="@dimen/font_size_home_page"
-                    android:textCursorDrawable="@drawable/color_cursor" />
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/font_size_home_page" />
             </LinearLayout>
 
 
@@ -128,8 +131,8 @@
                     android:maxLines="3"
                     android:textColor="@android:color/darker_gray"
                     android:textColorHint="@color/textHintColor"
-                    android:textSize="@dimen/font_size_home_page"
-                    android:textCursorDrawable="@drawable/color_cursor"/>
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/font_size_home_page" />
             </LinearLayout>
 
 
@@ -162,8 +165,8 @@
                     android:maxLines="3"
                     android:textColor="@android:color/darker_gray"
                     android:textColorHint="@color/textHintColor"
-                    android:textSize="@dimen/font_size_home_page"
-                    android:textCursorDrawable="@drawable/color_cursor" />
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/font_size_home_page" />
             </LinearLayout>
 
 
@@ -185,11 +188,11 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paddingLeftandRight"
+            android:layout_marginTop="@dimen/paddingLeftandRight"
             android:background="@drawable/rectangle_round_corner_filled_inverse"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:layout_marginTop="@dimen/paddingLeftandRight"
-            android:layout_marginBottom="@dimen/paddingLeftandRight"
             android:text="Submit"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textColor="@android:color/darker_gray" />

@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.sabbir.preneurlab.mentalhealth.MainActivity"
+
+        <activity android:name="com.sabbir.preneurlab.mentalhealth.Splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +20,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.sabbir.preneurlab.mentalhealth.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
         <activity android:name="com.sabbir.preneurlab.mentalhealth.MeasurementQuestion"
             android:screenOrientation="portrait">
         </activity>

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Sabbir on 1/10/2018.
@@ -26,6 +27,13 @@ public class MeasurementQuestion extends AppCompatActivity{
                     radioButton5,
                     radioButton6;
 
+    private EditText editText1,
+                     editText2,
+                     editText3,
+                     editText4,
+                     editText5,
+                     editText6;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,18 +42,24 @@ public class MeasurementQuestion extends AppCompatActivity{
         //setting action bar icon and text properties
         Toolbar toolbar = findViewById(R.id.mCustomToolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("  Mental Health");
+        getSupportActionBar().setTitle("  Measurement Question");
         getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
         toolbar.setTitleTextColor(getResources().getColor(R.color.iconTintColorFrontPageButton));
 
         // customizing the underline's color
 
-        EditText editText1 = findViewById(R.id.editText);
-        EditText editText2 = findViewById(R.id.editText2);
-        EditText editText3 = findViewById(R.id.editText3);
-        EditText editText4 = findViewById(R.id.editText4);
-        EditText editText5 = findViewById(R.id.editText5);
-        EditText editText6 = findViewById(R.id.editText6);
+        editText1 = findViewById(R.id.editText);
+        //editText1.setVisibility(View.GONE);
+        editText2 = findViewById(R.id.editText2);
+        editText2.setVisibility(View.GONE);
+        editText3 = findViewById(R.id.editText3);
+        editText3.setVisibility(View.GONE);
+        editText4 = findViewById(R.id.editText4);
+        editText4.setVisibility(View.GONE);
+        editText5 = findViewById(R.id.editText5);
+        editText5.setVisibility(View.GONE);
+        editText6 = findViewById(R.id.editText6);
+        //editText6.setVisibility(View.GONE);
 
 
         editText1.getBackground().setColorFilter(getResources().getColor(R.color.blueColorForButton), PorterDuff.Mode.SRC_IN);
@@ -106,5 +120,44 @@ public class MeasurementQuestion extends AppCompatActivity{
             }
         });
 
+
+
+        //setting submit button
+        Button submitButton = findViewById(R.id.button);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getBaseContext(), "Replace with your action...", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
+    //.....Selecting different layout for each button click by switch.....
+    public void onClick(View v){
+        switch (v.getId()) {
+
+            //.....Others answer session.....
+            case R.id.radioButton6:
+                    /*if (viewGroupIsNotVisible1) {
+                        editText2.setVisibility(View.VISIBLE);
+                    } else {
+                        editText2.setVisibility(View.GONE);
+                    }
+                    viewGroupIsNotVisible1 = !viewGroupIsNotVisible1;*/
+                editText2.setVisibility(View.VISIBLE);
+                //v.startAnimation(buttonClick);
+                break;
+
+            case R.id.radioButton9:
+                editText3.setVisibility(View.VISIBLE);
+                break;
+            case R.id.radioButton14:
+                editText4.setVisibility(View.VISIBLE);
+                break;
+            case R.id.radioButton20:
+                editText5.setVisibility(View.VISIBLE);
+                break;
+        }
     }
 }
