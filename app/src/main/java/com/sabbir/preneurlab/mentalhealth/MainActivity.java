@@ -34,11 +34,35 @@ public class MainActivity extends AppCompatActivity {
         rememberingChildhoodButton = findViewById(R.id.rememberingChildhood);
         othersButton = findViewById(R.id.others);
 
+        generalButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, GeneralQuestion.class);
+                startActivity(i);
+            }
+        });
+
         measurementButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent i = new Intent(MainActivity.this, MeasurementQuestion.class);
+                startActivity(i);
+            }
+        });
+
+        rememberingChildhoodButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, RememberingChildhood.class);
+                startActivity(i);
+            }
+        });
+
+        othersButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, OtherQuestions.class);
                 startActivity(i);
             }
         });

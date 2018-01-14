@@ -8,4 +8,5 @@
     <color name="iconTintColorFrontPageButton">#0187d0</color>
     <color name="blueColorForButton">#006094</color>
     <color name="textHintColor">#7c7c7c</color>
+    <color name="black">#000000</color>
 </resources>

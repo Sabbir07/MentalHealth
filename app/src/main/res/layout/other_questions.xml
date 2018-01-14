@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_dark"
     android:descendantFocusability="beforeDescendants"
-    android:focusableInTouchMode="true"
-    tools:context="com.sabbir.preneurlab.mentalhealth.MainActivity">
+    android:focusableInTouchMode="true">
 
     <include
         android:id="@+id/mCustomToolbar"
@@ -43,44 +43,11 @@
                 android:paddingTop="30dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp"
-                    android:text="Tell me about yourself."
-                    android:textColor="@android:color/darker_gray" />
-
-                <EditText
-                    android:id="@+id/editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Write here"
-                    android:inputType="textMultiLine"
-                    android:maxLines="3"
-                    android:textColor="@android:color/darker_gray"
-                    android:textColorHint="@color/textHintColor"
-                    android:textSize="@dimen/font_size_home_page"
-                    android:textCursorDrawable="@drawable/color_cursor" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/rectangle_round_corner_filled"
-                android:orientation="vertical"
-                android:paddingBottom="25dp"
-                android:paddingLeft="30dp"
-                android:paddingRight="30dp"
-                android:paddingTop="30dp">
-
-                <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
-                    android:text="What are you ?"
+                    android:text="What Should you do when your friend feel sick?"
                     android:textColor="@android:color/darker_gray" />
 
                 <RelativeLayout
@@ -100,7 +67,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Human"
+                            android:text="Give some medicine"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -109,7 +76,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Man"
+                            android:text="Try to find out problems"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -118,7 +85,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Woman"
+                            android:text="Meet with medical consultant"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -127,7 +94,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="1"
+                            android:text="Ignore"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -136,16 +103,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="1"
-                            android:textColor="@android:color/darker_gray" />
-
-                        <RadioButton
-                            android:id="@+id/radioButton6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:buttonTint="@android:color/darker_gray"
-                            android:checked="false"
-                            android:text="1"
+                            android:text="Others"
                             android:textColor="@android:color/darker_gray" />
 
                     </RadioGroup>
@@ -162,7 +120,7 @@
                         android:textColor="@android:color/darker_gray"
                         android:textColorHint="@color/textHintColor"
                         android:textSize="@dimen/font_size_home_page"
-                        android:textCursorDrawable="@drawable/color_cursor" />
+                        android:textCursorDrawable="@drawable/color_cursor"/>
                 </RelativeLayout>
             </LinearLayout>
 
@@ -183,7 +141,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
-                    android:text="What things make you worried?"
+                    android:text="What should you do when your friends feel alone?"
                     android:textColor="@android:color/darker_gray" />
 
                 <RadioGroup
@@ -199,7 +157,7 @@
                         android:layout_height="wrap_content"
                         android:buttonTint="@android:color/darker_gray"
                         android:checked="false"
-                        android:text="Failure"
+                        android:text="Give him company"
                         android:textColor="@android:color/darker_gray" />
 
                     <RadioButton
@@ -208,11 +166,20 @@
                         android:layout_height="wrap_content"
                         android:buttonTint="@android:color/darker_gray"
                         android:checked="false"
-                        android:text="Misunderstanding"
+                        android:text="Visit historical place with your friends"
                         android:textColor="@android:color/darker_gray" />
 
                     <RadioButton
                         android:id="@+id/radioButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:checked="false"
+                        android:text="Messaging/Chatting"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton9_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:buttonTint="@android:color/darker_gray"
@@ -231,7 +198,7 @@
                         android:textColor="@android:color/darker_gray"
                         android:textColorHint="@color/textHintColor"
                         android:textSize="@dimen/font_size_home_page"
-                        android:textCursorDrawable="@drawable/color_cursor"/>
+                        android:textCursorDrawable="@drawable/color_cursor" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -253,7 +220,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
-                    android:text="What do you do when you are worried/depressed?"
+                    android:text="What is matched with your behaviour?"
                     android:textColor="@android:color/darker_gray" />
 
                 <RelativeLayout
@@ -273,7 +240,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Broke something near you"
+                            android:text="Aggression"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -282,7 +249,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Listening Music"
+                            android:text="Self injury"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -291,7 +258,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Walk"
+                            android:text="Disruption/tantrums"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -300,7 +267,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Keep yourself alone"
+                            android:text="Inappropriate language"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -309,7 +276,25 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Others"
+                            android:text="Social withdrawal/Isolation"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton14_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Running away"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton14_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Other"
                             android:textColor="@android:color/darker_gray" />
                     </RadioGroup>
 
@@ -348,7 +333,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
-                    android:text="What do you do when you live alone?"
+                    android:text="What is the reason that divided you to take a decision?"
                     android:textColor="@android:color/darker_gray" />
 
                 <RelativeLayout
@@ -368,7 +353,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Reading book"
+                            android:text="Confusion"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -377,7 +362,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Watching movie"
+                            android:text="Analysis"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -386,7 +371,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Playing mobile games"
+                            android:text="Nervousness"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -395,7 +380,7 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Writting"
+                            android:text="Afraid"
                             android:textColor="@android:color/darker_gray" />
 
                         <RadioButton
@@ -404,18 +389,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/darker_gray"
                             android:checked="false"
-                            android:text="Cooking"
-                            android:textColor="@android:color/darker_gray" />
-
-                        <RadioButton
-                            android:id="@+id/radioButton20"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:buttonTint="@android:color/darker_gray"
-                            android:checked="false"
                             android:text="Others"
                             android:textColor="@android:color/darker_gray" />
-
                     </RadioGroup>
 
                     <EditText
@@ -448,24 +423,180 @@
                 android:paddingTop="30dp">
 
                 <TextView
+                    android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
-                    android:text="What is your greatest accomplishment?"
+                    android:text="How you take a decision?"
                     android:textColor="@android:color/darker_gray" />
 
-                <EditText
-                    android:id="@+id/editText6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Write here"
-                    android:inputType="textMultiLine"
-                    android:maxLines="3"
-                    android:textColor="@android:color/darker_gray"
-                    android:textColorHint="@color/textHintColor"
-                    android:textSize="@dimen/font_size_home_page"
-                    android:textCursorDrawable="@drawable/color_cursor" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left|top">
+
+                        <RadioButton
+                            android:id="@+id/radioButton20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Suddenly"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Discussion with friends or family members"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Thinking and Analysing"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Others"
+                            android:textColor="@android:color/darker_gray" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/editText6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/radioGroup5"
+                        android:hint="Write here"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHint="@color/textHintColor"
+                        android:textSize="@dimen/font_size_home_page"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+                </RelativeLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_corner_filled"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="Do you have any Medical History?"
+                    android:textColor="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left|top">
+
+                        <RadioButton
+                            android:id="@+id/radioButton24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Head injury/stroke"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Loss of consciousness"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Nervousness"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Kidney disease"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Heart/vascular problems"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Others"
+                            android:textColor="@android:color/darker_gray" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/editText7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/radioGroup6"
+                        android:hint="Write here"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHint="@color/textHintColor"
+                        android:textSize="@dimen/font_size_home_page"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+                </RelativeLayout>
+            </LinearLayout>
+
 
         </LinearLayout>
     </ScrollView>
